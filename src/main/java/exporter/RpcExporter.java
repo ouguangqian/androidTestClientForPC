@@ -18,6 +18,7 @@ public class RpcExporter {
         ServerSocket serverSocket = new ServerSocket();
         // 绑定主机名， 端口号
         serverSocket.bind(new InetSocketAddress(hostName, port));
+        System.out.println("服务启动。。。");
 
         try {
             while (true) {

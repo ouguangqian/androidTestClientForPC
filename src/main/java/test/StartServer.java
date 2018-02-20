@@ -1,13 +1,8 @@
 package test;
 
-import client.RpcImporter;
 import exporter.RpcExporter;
-import server.IRpcService;
-import server.RpcServiceImpl;
 
-import java.net.InetSocketAddress;
-
-public class RpcTest {
+public class StartServer {
     public static void main(String[] args) throws InterruptedException {
         new Thread(new Runnable() {
             public void run() {
