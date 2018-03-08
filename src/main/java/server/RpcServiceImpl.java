@@ -1,5 +1,7 @@
 package server;
 
+import java.util.Map;
+
 public class RpcServiceImpl implements IRpcService {
     public String logMsg() {
         System.out.println("No Arguments log");
@@ -28,4 +30,5 @@ public class RpcServiceImpl implements IRpcService {
     public void click(int x, int y) {
         System.out.println("点击坐标(" + x + ", " + y + ")");
     }
+
 }

@@ -9,7 +9,7 @@ import java.net.InetSocketAddress;
 public class KeyWordImpl {
      // 创建客户端服务代理类
      final static  RpcImporter<IRpcService> importer = new RpcImporter<IRpcService>();
-     final static    IRpcService iRpcService = importer.importer(RpcServiceImpl.class, new InetSocketAddress("localhost", 8889));
+     final static    IRpcService iRpcService = importer.importer(RpcServiceImpl.class, new InetSocketAddress("localhost", 9000));
 
      public String logMsg() {
          iRpcService.logMsg();

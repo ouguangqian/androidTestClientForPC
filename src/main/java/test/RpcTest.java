@@ -12,7 +12,7 @@ public class RpcTest {
         new Thread(new Runnable() {
             public void run() {
                 try {
-                    RpcExporter.exporter("localhost", 8889);
+                    RpcExporter.exporter("localhost", 8899);
                 }catch (Exception e){
                     e.printStackTrace();
                 }
