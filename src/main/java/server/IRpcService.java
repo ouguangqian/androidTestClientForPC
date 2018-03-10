@@ -1,12 +1,19 @@
 package server;
 
-import java.util.Map;
-
 public interface IRpcService {
-    String logMsg();
-    String logMsg(String msg);
-    void home();
-    void back();
+    void home() throws Exception;
+    void back() throws Exception;
     void openNotification();
-    void click(int x, int y);
+
+    void clickByCoordinate(int x, int y) throws Exception;
+    void clickById(String resourceId) throws Exception;
+    void clickByText(String text) throws Exception;
+    void clickByTextContains(String text) throws Exception;
+
+    void verifyTextExists(String text) throws Exception;
+    void verifyTextNotExists(String text) throws Exception;
+
+    void verifyEleExists(String resourceId) throws Exception;
+    void verifyEleNotExists(String resourceId) throws Exception;
+
 }

@@ -14,7 +14,7 @@ import java.util.Map;
 public class KeyWordRunner {
 
     public static void main(String[] args) throws Exception {
-        Runner.Runner("/home/pateo/apps/BDD/androidTestClientForPC-master/src/main/resources/case2.atm");
+        Runner.Runner("E:/IdeaProjects/androidTestClientForPC/src/main/resources/case3.atm");
 
         System.out.println(Context.CONTEXTMAP);
     }

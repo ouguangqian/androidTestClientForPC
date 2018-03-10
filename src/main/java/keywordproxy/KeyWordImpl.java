@@ -11,23 +11,14 @@ public class KeyWordImpl {
      final static  RpcImporter<IRpcService> importer = new RpcImporter<IRpcService>();
      final static    IRpcService iRpcService = importer.importer(RpcServiceImpl.class, new InetSocketAddress("localhost", 9000));
 
-     public String logMsg() {
-         iRpcService.logMsg();
-        return "No Argument";
-    }
 
-    public String logMsg(String msg) {
-         iRpcService.logMsg(msg);
-        System.out.println("With Arguments log");
-        return "With Argument >>>" + msg;
-    }
 
-    public void home() {
+    public void home() throws Exception {
          iRpcService.home();
         System.out.println("回到主页");
     }
 
-    public void back() {
+    public void back() throws Exception {
          iRpcService.back();
         System.out.println("返回上一界面");
 
@@ -38,11 +29,50 @@ public class KeyWordImpl {
         System.out.println("打开通知");
     }
 
+    public void clickByCoordinate(String x, String y) throws Exception {
+        iRpcService.clickByCoordinate(Integer.parseInt(x), Integer.parseInt(y));
 
-    public void click(String x, String y) {
-         iRpcService.click(Integer.parseInt(String.valueOf(x)), Integer.parseInt(String.valueOf(y)));
-        System.out.println("点击坐标(" + x + ", " + y + ")");
     }
+
+    public void clickById(String resourceId) throws Exception {
+        iRpcService.clickById(resourceId);
+
+    }
+
+    public void clickByText(String text) throws Exception {
+        iRpcService.clickByText(text);
+
+    }
+
+    public void clickByTextContains(String text) throws Exception {
+        iRpcService.clickByTextContains(text);
+
+    }
+
+    public void verifyTextExists(String text) throws Exception {
+        iRpcService.verifyTextExists(text);
+
+    }
+
+    public void verifyTextNotExists(String text) throws Exception {
+        iRpcService.verifyTextNotExists(text);
+    }
+
+    public void verifyEleExists(String resourceId) throws Exception {
+        iRpcService.verifyEleExists(resourceId);
+
+    }
+
+    public void verifyEleNotExists(String resourceId) throws Exception {
+        iRpcService.verifyEleNotExists(resourceId);
+    }
+
+    public void sleep(String time)throws Exception{
+        Thread.sleep(Integer.parseInt(time) * 1000);
+        System.out.println("延时 => "  + time + "秒");
+    }
+
+
 
     public boolean returnTrue(){
          return true;

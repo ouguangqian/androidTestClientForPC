@@ -1,0 +1,51 @@
+step:home  ------  passed
+step:click_by_coordinate  300  500  ------  passed
+step:home  ------  passed
+step:click_by_coordinate  300  500  ------  passed
+step:home  ------  passed
+step:click_by_coordinate  300  500  ------  passed
+step:returnString  =>  ret1  ------  passed
+step:if  returnTrue  runKeyWord  returnString  =>  ret1  ------  passed
+step:unless  returnTrue  runKeyWord  returnString  =>  ret2  ------  passed
+step:returnString  =>  ret3  ------  passed
+step:unless  returnFalse  runKeyWord  returnString  =>  ret3  ------  passed
+step:if  returnFalse  runKeyWord  returnString  =>  ret4  ------  passed
+step:sleep  3  ------  passed
+step:home  ------  passed
+step:click_by_coordinate  300  500  ------  passed
+step:home  ------  passed
+step:click_by_coordinate  300  500  ------  passed
+step:home  ------  passed
+step:click_by_coordinate  300  500  ------  passed
+step:returnString  =>  ret1  ------  passed
+step:if  returnTrue  runKeyWord  returnString  =>  ret1  ------  passed
+step:unless  returnTrue  runKeyWord  returnString  =>  ret2  ------  passed
+step:returnString  =>  ret3  ------  passed
+step:unless  returnFalse  runKeyWord  returnString  =>  ret3  ------  passed
+step:if  returnFalse  runKeyWord  returnString  =>  ret4  ------  passed
+step:home  ------  passed
+step:click_by_coordinate  300  500  ------  passed
+step:home  ------  passed
+step:click_by_coordinate  300  500  ------  passed
+step:home  ------  passed
+step:click_by_coordinate  300  500  ------  passed
+step:returnString  =>  ret1  ------  passed
+step:if  returnTrue  runKeyWord  returnString  =>  ret1  ------  passed
+step:unless  returnTrue  runKeyWord  returnString  =>  ret2  ------  passed
+step:returnString  =>  ret3  ------  passed
+step:unless  returnFalse  runKeyWord  returnString  =>  ret3  ------  passed
+step:if  returnFalse  runKeyWord  returnString  =>  ret4  ------  passed
+step:sleep  3  ------  passed
+step:home  ------  passed
+step:click_by_coordinate  300  500  ------  passed
+step:home  ------  passed
+step:click_by_coordinate  300  500  ------  passed
+step:home  ------  passed
+step:click_by_coordinate  300  500  ------  passed
+step:returnString  =>  ret1  ------  passed
+step:if  returnTrue  runKeyWord  returnString  =>  ret1  ------  passed
+step:unless  returnTrue  runKeyWord  returnString  =>  ret2  ------  passed
+step:returnString  =>  ret3  ------  passed
+step:unless  returnFalse  runKeyWord  returnString  =>  ret3  ------  passed
+step:if  returnFalse  runKeyWord  returnString  =>  ret4  ------  passed
+step:sleep  3  ------  passed
