@@ -16,4 +16,5 @@ public interface IRpcService {
     void verifyEleExists(String resourceId) throws Exception;
     void verifyEleNotExists(String resourceId) throws Exception;
 
+    byte[] takeScreenshot(String pngName) throws Exception;
 }

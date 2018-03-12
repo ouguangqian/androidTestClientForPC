@@ -1,13 +1,15 @@
 package runner;
 
-import fileutil.FileUtil;
+import logger.LogWriter;
+import utils.FileUtil;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
 public class Runner {
     public static void Runner(String filePath) throws Exception {
+
+        new LogWriter().logReport("caseName:" + filePath);
 
         List<Map<String, List<String>>> caseLists =  FileUtil.fileToCaseMap(filePath);
 

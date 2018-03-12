@@ -1,4 +1,4 @@
-package fileutil;
+package utils;
 
 import java.io.*;
 import java.util.*;
@@ -63,6 +63,28 @@ public class FileUtil {
         }
         return caseLists;
     }
+
+    public static boolean saveInfoToFile(String filePath, String info, boolean append){
+        FileWriter writer = null;
+        try {
+            //打开一个写文件器，构造函数中的第二个参数true表示以追加形式写文件
+            writer = new FileWriter(filePath, append);
+            writer.write(info);
+            writer.close();
+            return true;
+        } catch (IOException e) {
+            e.printStackTrace();
+            if (writer != null) {
+                try {
+                    writer.close();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+            }
+            return false;
+        }
+    }
+
     public static void main(String[] args) throws Exception {
         List<String> aa = pathToFileList("E:\\IdeaProjects\\fortest\\src\\main\\resources");
         System.out.println(aa);

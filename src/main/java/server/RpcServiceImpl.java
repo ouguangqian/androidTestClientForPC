@@ -1,10 +1,6 @@
 package server;
 
-import java.util.Map;
-
 public class RpcServiceImpl implements IRpcService {
-
-
     public void home() {
         System.out.println("回到主页");
     }
@@ -54,9 +50,13 @@ public class RpcServiceImpl implements IRpcService {
     }
 
     public void verifyEleNotExists(String resourceId) throws Exception {
-         System.out.println("验证元素不存在 => " + resourceId);
+        System.out.println("验证元素不存在 => " + resourceId);
 
     }
 
+    public byte[] takeScreenshot(String pngName) throws Exception {
+        System.out.println("截图");
+        return new byte[0];
+    }
 
 }

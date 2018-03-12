@@ -4,7 +4,7 @@ import java.util.List;
 
 public class RunLoopStep {
 
-    public static void runLoopSteps(List<String> stepList, int loopTimes) throws NoSuchMethodException {
+    public static void runLoopSteps(List<String> stepList, int loopTimes) throws Exception {
         for (int i = 0; i < loopTimes; i++) {
             System.out.println("执行第" + String.valueOf(i + 1) + "次循环...");
             for (int j = 0; j < stepList.size(); j++) {

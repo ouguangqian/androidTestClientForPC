@@ -1,9 +1,0 @@
-loop  3
-home
-click_by_coordinate  300  500
-end
-if  returnTrue  runKeyWord  returnString  =>  ret1
-unless  returnTrue  runKeyWord  returnString  =>  ret2
-unless  returnFalse  runKeyWord  returnString  =>  ret3
-if  returnFalse  runKeyWord  returnString  =>  ret4
-sleep  3

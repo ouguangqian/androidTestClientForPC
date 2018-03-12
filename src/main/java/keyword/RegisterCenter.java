@@ -1,6 +1,8 @@
 package keyword;
 
 
+
+
 import keywordproxy.KeyWordImpl;
 import server.MoveDesk;
 
@@ -27,12 +29,15 @@ public class RegisterCenter {
         KEYWORD_POOLS.put("verify_ele_not_exists", methodInfo(KeyWordImpl.class.getName(), "verifyEleNotExists", new Class[]{String.class}));
 
         KEYWORD_POOLS.put("sleep", methodInfo(KeyWordImpl.class.getName(), "sleep", new Class[]{String.class}));
+        KEYWORD_POOLS.put("start_activity", methodInfo(KeyWordImpl.class.getName(), "startActivity", new Class[]{String.class}));
+        KEYWORD_POOLS.put("get_cpu", methodInfo(KeyWordImpl.class.getName(), "getCpu", new Class[]{}));
+        KEYWORD_POOLS.put("get_mem", methodInfo(KeyWordImpl.class.getName(), "getProcrank", new Class[]{}));
+
 
         KEYWORD_POOLS.put("home", methodInfo(KeyWordImpl.class.getName(), "home", new Class[]{}));
         KEYWORD_POOLS.put("returnFalse", methodInfo(KeyWordImpl.class.getName(), "returnFalse", new Class[]{}));
         KEYWORD_POOLS.put("returnTrue", methodInfo(KeyWordImpl.class.getName(), "returnTrue", new Class[]{}));
         KEYWORD_POOLS.put("returnString", methodInfo(KeyWordImpl.class.getName(), "returnString", new Class[]{}));
-
 
         KEYWORD_POOLS.put("张三", methodInfo(MoveDesk.class.getName(), "setZhangsan",new Class[]{}));
         KEYWORD_POOLS.put("把桌子从A地点搬到B地点", methodInfo(MoveDesk.class.getName(), "moveDeskFromA2B",new Class[]{String.class, String.class}));

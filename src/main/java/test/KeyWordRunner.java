@@ -1,20 +1,19 @@
 package test;
 
 import context.Context;
-import fileutil.FileUtil;
-import runner.RunKeyWord;
-import runner.RunLoopStep;
-import runner.RunStep;
 import runner.Runner;
 
-import java.io.IOException;
-import java.util.List;
-import java.util.Map;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class KeyWordRunner {
 
     public static void main(String[] args) throws Exception {
-        Runner.Runner("E:/IdeaProjects/androidTestClientForPC/src/main/resources/case3.atm");
+        // 设置报告路径
+        String timeStr = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").format(new Date());
+        Context.reportPath = System.getProperty("user.home") + "/performReport" + "/" + timeStr;
+
+        Runner.Runner("/home/pateo/apps/BDD/androidTestClientForPC-master/src/main/resources/case2.atm");
 
         System.out.println(Context.CONTEXTMAP);
     }
